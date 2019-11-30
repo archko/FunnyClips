@@ -6,7 +6,7 @@ static def addRepos(RepositoryHandler handler) {
     handler.jcenter()
     handler.maven { url 'https://dl.bintray.com/umsdk/release' }
     handler.maven { url 'https://maven.aliyun.com/repository/jcenter' }
-    //handler.maven { url "https://jitpack.io" }
+    handler.maven { url "https://jitpack.io" }
     //handler.mavenCentral()
     //handler.maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
     //handler.maven { url "https://kotlin.bintray.com/kotlinx/" }
