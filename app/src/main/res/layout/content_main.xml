@@ -34,6 +34,6 @@
         android:clickable="true"
         android:background="?attr/colorPrimary"
         android:transitionName="@string/transition_fab_icon"
-        app:layout_behavior=".ui.widget.FABBehaviour"/>
+        app:layout_behavior="com.victor.clips.ui.widget.FABBehaviour"/>
 
 </com.victor.clips.ui.widget.InsetsCoordinatorLayout>
