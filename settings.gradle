@@ -1,1 +1,9 @@
 include ':app'
+
+setBinding(new Binding([gradle: this, mainModuleName: 'app']))
+evaluate(new File(
+        settingsDir.parentFile,
+        'FunnyClips/aeyepetizer/.android/include_flutter.groovy'
+))
+include ':aeyepetizer'
+project(':aeyepetizer').projectDir = new File('./aeyepetizer')

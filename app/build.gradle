@@ -19,7 +19,7 @@ android {
     buildToolsVersion ANDROID_BUILD_TOOLS_VERSION
 
     defaultConfig {
-        applicationId "com.victor.clips.archko"
+        applicationId "com.victor.clips.archko.flutter"
         minSdkVersion ANDROID_BUILD_MIN_SDK_VERSION
         targetSdkVersion ANDROID_BUILD_TARGET_SDK_VERSION
         versionCode VERSION_CODE as int
@@ -27,6 +27,7 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         multiDexEnabled true
+        ndk.abiFilters 'armeabi-v7a', 'arm64-v8a'
 
         javaCompileOptions {
             annotationProcessorOptions {
@@ -68,6 +69,9 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation project(':flutter')
+
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     //noinspection GradleCompatible
     api "androidx.fragment:fragment-ktx:${X_SUPPORT_FRAGMENT_KTX}"
