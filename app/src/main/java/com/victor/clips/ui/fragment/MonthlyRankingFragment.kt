@@ -1,13 +1,13 @@
 package com.victor.clips.ui.fragment
 
 import android.os.Bundle
-import android.support.v4.widget.SwipeRefreshLayout
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import android.view.View
 import android.widget.AdapterView
 import com.victor.clips.R
 import com.victor.clips.ui.MainActivity
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.LinearLayoutManager
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.victor.clips.ui.VideoDetailActivity
 import com.victor.clips.ui.adapter.RankingAdapter
 import com.victor.clips.data.HomeItemInfo

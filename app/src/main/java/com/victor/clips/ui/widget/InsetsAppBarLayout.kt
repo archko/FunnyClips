@@ -3,13 +3,13 @@ package com.victor.clips.ui.widget
 import android.content.Context
 import android.content.res.Resources
 import android.graphics.Rect
-import android.support.design.widget.AppBarLayout
+import com.google.android.material.appbar.AppBarLayout
 import android.util.AttributeSet
 import android.view.View
 import com.victor.clips.interfaces.ColorUiInterface
 import com.victor.clips.interfaces.WindowInsetsHandler
 import com.victor.clips.util.ViewAttributeUtil
-import android.support.design.widget.CoordinatorLayout
+import androidx.coordinatorlayout.widget.CoordinatorLayout
 import com.victor.clips.interfaces.WindowInsetsHandlingBehavior
 import com.victor.clips.util.WindowInsetsHelper
 

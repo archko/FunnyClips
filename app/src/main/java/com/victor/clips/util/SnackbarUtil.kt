@@ -4,10 +4,10 @@ import android.view.Gravity
 import android.R.attr.gravity
 import android.widget.LinearLayout
 import android.view.LayoutInflater
-import android.support.design.widget.Snackbar
 import android.graphics.Color
 import android.view.View
 import android.widget.TextView
+import com.google.android.material.snackbar.Snackbar
 import com.victor.clips.R
 
 

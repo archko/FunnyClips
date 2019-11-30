@@ -2,10 +2,10 @@ package com.victor.clips.ui
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v4.app.ActivityCompat
-import android.support.v4.app.ActivityOptionsCompat
+import androidx.core.app.ActivityCompat
+import androidx.core.app.ActivityOptionsCompat
 import android.view.MenuItem
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.view.View
 import android.widget.AdapterView
 import com.victor.clips.ui.adapter.RelatedVideoAdapter
@@ -15,7 +15,7 @@ import com.victor.clips.presenter.RelatedVideoPresenterImpl
 import com.victor.clips.util.*
 import com.victor.clips.ui.view.RelatedVideoView
 import kotlinx.android.synthetic.main.activity_video_detail.*
-import android.support.design.widget.AppBarLayout
+import com.google.android.material.appbar.AppBarLayout
 import android.view.ViewGroup
 import com.victor.clips.util.StatusBarUtil
 import android.content.pm.ActivityInfo
@@ -23,7 +23,7 @@ import android.os.Message
 import org.victor.khttp.library.util.MainHandler
 import android.content.res.Configuration
 import android.graphics.Typeface
-import android.support.design.widget.CoordinatorLayout
+import androidx.coordinatorlayout.widget.CoordinatorLayout
 import android.view.MotionEvent
 import com.victor.clips.R
 import com.victor.clips.ui.adapter.SlideInLeftAnimatorAdapter

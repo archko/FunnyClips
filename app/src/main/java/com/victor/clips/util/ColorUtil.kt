@@ -1,7 +1,7 @@
 package com.victor.clips.util
 
-import android.support.annotation.ColorInt
-import android.support.annotation.FloatRange
+import androidx.annotation.ColorInt
+import androidx.annotation.FloatRange
 import com.victor.clips.R
 import com.victor.clips.app.App
 import java.util.*

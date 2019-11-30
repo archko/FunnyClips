@@ -57,9 +57,9 @@
 -keep public class com.android.vending.licensing.ILicensingService
 
 # 保留继承的
--keep public class * extends android.support.v4.**
--keep public class * extends android.support.annotation.**
--keep public class * extends android.support.v7.**
+-keep public class * extends androidx.annotation.**
+-keep public class * extends androidx.recyclerview.**
+-keep public class * extends androidx.cardview.**
 
 # 保留support下的所有类及其内部类
 -keep class android.support.** {*;}

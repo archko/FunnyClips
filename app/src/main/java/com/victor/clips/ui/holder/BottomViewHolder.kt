@@ -1,6 +1,6 @@
 package com.victor.clips.ui.holder
 
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.ProgressBar

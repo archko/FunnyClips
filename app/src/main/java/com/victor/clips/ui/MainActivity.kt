@@ -4,21 +4,21 @@ import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
 import android.os.Bundle
-import android.support.design.widget.NavigationView
-import android.support.v4.app.Fragment
-import android.support.v4.view.GravityCompat
+import com.google.android.material.navigation.NavigationView
+import androidx.fragment.app.Fragment
 import android.view.Menu
 import android.view.MenuItem
 import kotlinx.android.synthetic.main.toolbar.*
-import android.support.v4.view.ViewCompat
-import android.support.v7.app.ActionBarDrawerToggle
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.RecyclerView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.RecyclerView
 import android.view.KeyEvent
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 import android.view.animation.DecelerateInterpolator
+import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.core.view.GravityCompat
+import androidx.core.view.ViewCompat
 import com.victor.clips.R
 import com.victor.clips.ui.fragment.*
 import com.victor.clips.util.*
@@ -27,7 +27,7 @@ import kotlinx.android.synthetic.main.nav_header_main.view.*
 import org.victor.funny.util.ToastUtils
 
 
-class MainActivity : BaseActivity(),NavigationView.OnNavigationItemSelectedListener,
+class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedListener,
         View.OnClickListener {
 
     var actionbarScrollPoint: Float = 0f

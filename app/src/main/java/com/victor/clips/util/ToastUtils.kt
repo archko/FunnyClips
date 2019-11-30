@@ -1,6 +1,6 @@
 package org.victor.funny.util
 
-import android.support.annotation.IntegerRes
+import androidx.annotation.IntegerRes
 import android.widget.Toast
 import com.victor.clips.app.App
 import com.victor.clips.util.AppConfig

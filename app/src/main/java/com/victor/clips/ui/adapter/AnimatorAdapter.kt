@@ -1,7 +1,7 @@
 package com.victor.clips.ui.adapter
 
 import android.animation.Animator
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.ViewGroup
 import com.victor.clips.util.ViewAnimator
 import android.os.Bundle

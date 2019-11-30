@@ -1,7 +1,7 @@
 package com.victor.clips.ui.fragment
 
 import android.os.Bundle
-import android.support.v4.widget.SwipeRefreshLayout
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import android.view.View
 import android.widget.AdapterView
 import com.victor.clips.R
@@ -10,18 +10,18 @@ import com.victor.clips.presenter.VideoCategoryPresenterImpl
 import com.victor.clips.util.DeviceUtils
 import com.victor.clips.util.WebConfig
 import com.victor.clips.ui.view.VideoCategoryView
-import android.support.v7.widget.GridLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
 import com.victor.clips.data.CategoryReq
 import com.victor.clips.ui.MainActivity
 import com.victor.clips.ui.VideoCategoryActivity
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_category.*
 import kotlinx.android.synthetic.main.fragment_category.*
 import kotlinx.android.synthetic.main.fragment_category.mRvCategory
 import android.view.animation.LayoutAnimationController
 import android.view.animation.AnimationUtils
 import com.victor.clips.ui.adapter.SlideInLeftAnimatorAdapter
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 
 
 /*

@@ -3,17 +3,17 @@ package com.victor.clips.util
 import android.animation.Animator
 import android.os.SystemClock
 import android.util.SparseArray
-import android.support.v7.widget.RecyclerView
-import android.support.v7.widget.StaggeredGridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import android.os.Bundle
 import android.os.Parcelable
-import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.LinearLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import android.annotation.SuppressLint
 import android.animation.AnimatorSet
-import android.support.v4.view.ViewCompat
+import androidx.core.view.ViewCompat
 import android.util.Log
 import android.view.View
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 
 
 /*

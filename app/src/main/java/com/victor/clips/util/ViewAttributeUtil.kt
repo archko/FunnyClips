@@ -4,7 +4,7 @@ import android.widget.TextView
 import com.victor.clips.interfaces.ColorUiInterface
 import android.content.res.ColorStateList
 import android.content.res.Resources
-import android.support.design.widget.FloatingActionButton
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import android.util.AttributeSet
 import android.widget.ImageView
 

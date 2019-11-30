@@ -1,7 +1,7 @@
 package com.victor.clips.interfaces
 
 import android.graphics.Rect
-import android.support.design.widget.CoordinatorLayout
+import androidx.coordinatorlayout.widget.CoordinatorLayout
 import android.view.View
 
 /*

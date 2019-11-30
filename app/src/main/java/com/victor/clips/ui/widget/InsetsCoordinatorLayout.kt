@@ -2,12 +2,12 @@ package com.victor.clips.ui.widget
 
 import android.content.Context
 import android.graphics.Rect
-import android.support.design.widget.CoordinatorLayout
+import androidx.coordinatorlayout.widget.CoordinatorLayout
 import android.util.AttributeSet
-import android.support.v4.view.WindowInsetsCompat
-import android.support.v4.view.ViewCompat
+import androidx.core.view.ViewCompat
 import android.view.View
 import android.os.Build
+import androidx.core.view.WindowInsetsCompat
 import com.victor.clips.interfaces.WindowInsetsHandlingBehavior
 
 
@@ -27,7 +27,7 @@ class InsetsCoordinatorLayout: CoordinatorLayout {
     constructor(context: Context, attrs: AttributeSet?) : this(context, attrs,0)
 
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(context, attrs, defStyleAttr) {
-        ViewCompat.setOnApplyWindowInsetsListener(this, object : android.support.v4.view.OnApplyWindowInsetsListener {
+        ViewCompat.setOnApplyWindowInsetsListener(this, object : androidx.core.view.OnApplyWindowInsetsListener {
             override fun onApplyWindowInsets(v: View, insets: WindowInsetsCompat): WindowInsetsCompat {
                 if (insets.isConsumed) {
                     return insets

@@ -2,7 +2,7 @@ package com.victor.clips.ui
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.victor.clips.R
 import com.victor.clips.module.DataObservable
 import com.victor.clips.util.StatusBarUtil

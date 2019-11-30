@@ -2,7 +2,7 @@ package com.victor.clips.ui.adapter
 
 import android.animation.Animator
 import android.animation.ObjectAnimator
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import android.view.View.TRANSLATION_Y

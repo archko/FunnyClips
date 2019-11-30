@@ -4,11 +4,11 @@ import android.content.Intent
 import android.graphics.Typeface
 import android.os.Bundle
 import android.view.MenuItem
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.view.View
 import android.widget.AdapterView
 import com.victor.clips.util.*
-import android.support.v7.widget.GridLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
 import com.victor.clips.R
 import com.victor.clips.ui.adapter.ColorAdapter
 import com.victor.clips.data.Theme

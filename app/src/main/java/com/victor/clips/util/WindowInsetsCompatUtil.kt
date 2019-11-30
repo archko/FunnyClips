@@ -1,9 +1,8 @@
 package com.victor.clips.util
 
 import android.view.Gravity
-import android.support.v4.view.WindowInsetsCompat
 import android.annotation.SuppressLint
-
+import androidx.core.view.WindowInsetsCompat
 
 
 /*

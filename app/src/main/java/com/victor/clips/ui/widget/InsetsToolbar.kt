@@ -7,8 +7,8 @@ import android.util.AttributeSet
 import android.view.View
 import com.victor.clips.interfaces.ColorUiInterface
 import com.victor.clips.interfaces.WindowInsetsHandler
-import android.support.v4.view.ViewCompat
-import android.support.v7.widget.Toolbar
+import androidx.core.view.ViewCompat
+import androidx.appcompat.widget.Toolbar
 import com.victor.clips.R
 import com.victor.clips.util.ViewAttributeUtil
 
