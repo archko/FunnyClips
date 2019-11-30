@@ -38,7 +38,7 @@ class AboutActivity : BaseActivity(),View.OnClickListener {
         setSupportActionBar(mAboutToolbar);
         supportActionBar?.setDisplayHomeAsUpEnabled(true);
 
-        fontStyle = Typeface.createFromAsset(assets, "fonts/ZuoAnLianRen.ttf");
+        fontStyle = FontUtils.getTypeface(assets);
 
         mCtvVersion.typeface = fontStyle
         mTvDescription.typeface = fontStyle

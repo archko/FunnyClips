@@ -2,13 +2,14 @@ package com.victor.clips.ui.adapter
 
 import android.content.Context
 import android.graphics.Typeface
-import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
+import androidx.recyclerview.widget.RecyclerView
 import com.victor.clips.R
 import com.victor.clips.data.CategoryInfo
 import com.victor.clips.ui.holder.ContentViewHolder
+import com.victor.clips.util.FontUtils
 import kotlinx.android.synthetic.main.rv_category_cell.view.*
 
 /*
@@ -26,7 +27,7 @@ class CategoryAdapter(context: Context, listener: AdapterView.OnItemClickListene
     var currentPosition: Int = -1
 
     init {
-        fontStyle = Typeface.createFromAsset(mContext?.assets, "fonts/ZuoAnLianRen.ttf");
+        fontStyle = FontUtils.getTypeface(mContext?.assets!!);
     }
     override fun onCreateHeadVHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder? {
         return null

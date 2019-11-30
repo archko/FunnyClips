@@ -95,7 +95,7 @@ class VideoDetailActivity : BaseActivity(), View.OnClickListener,RelatedVideoVie
 
         MainHandler.get().register(this)
 
-        fontStyle = Typeface.createFromAsset(getAssets(), "fonts/ZuoAnLianRen.ttf");
+        fontStyle = FontUtils.getTypeface(assets);
         mTvVideoDescription.typeface = fontStyle;
 
         relatedVideoPresenter = RelatedVideoPresenterImpl(this)
