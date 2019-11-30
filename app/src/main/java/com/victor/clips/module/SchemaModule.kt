@@ -70,7 +70,7 @@ class SchemaModule {
             val url = uri.getQueryParameter("url")
             Loger.e(TAG, "schemaWeb()-url = " + url)
             if (TextUtils.isEmpty(url)) return
-            WebActivity.intentStart(context, title, url)
+            WebActivity.intentStart(context, title!!, url!!)
         }
 
         fun sendEmail (context: Context, uri: Uri) {

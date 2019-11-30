@@ -503,7 +503,7 @@ class AppUtil {
             val list = am.getRunningTasks(1)
             if (list != null && list.size > 0) {
                 val cpn = list[0].topActivity
-                if (activity.javaClass.name == cpn.className) {
+                if (activity.javaClass.name == cpn?.className) {
                     return true
                 }
             }

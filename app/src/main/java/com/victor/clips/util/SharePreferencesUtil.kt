@@ -67,7 +67,7 @@ class SharePreferencesUtil {
             val sp = context.getSharedPreferences(Constant.MA_DATA, Context.MODE_PRIVATE)
             val value = sp.getString(key, defaultValue)
             Log.e(TAG, "getString()-$key=$value")
-            return value
+            return value!!
         }
 
         fun putBoolean(context: Context, key: String, value: Boolean) {

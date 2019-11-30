@@ -13,7 +13,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name="com.victor.clips.archko.app.App"
+        android:name=".app.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -73,18 +73,18 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity> <!-- 配置APP ID -->
-        <meta-data
+        <!--<meta-data
             android:name="BUGLY_APPID"
-            android:value="${BUGLY_APPID}" /> <!-- 配置APP版本号 -->
+            android:value="${BUGLY_APPID}" /> &lt;!&ndash; 配置APP版本号 &ndash;&gt;
         <meta-data
             android:name="BUGLY_APP_VERSION"
-            android:value="${BUGLY_APP_VERSION}" /> <!-- 配置APP渠道号 -->
+            android:value="${BUGLY_APP_VERSION}" /> &lt;!&ndash; 配置APP渠道号 &ndash;&gt;
         <meta-data
             android:name="BUGLY_APP_CHANNEL"
-            android:value="${BUGLY_APP_CHANNEL}" /> <!-- 配置Bugly调试模式（true或者false） -->
+            android:value="${BUGLY_APP_CHANNEL}" /> &lt;!&ndash; 配置Bugly调试模式（true或者false） &ndash;&gt;
         <meta-data
             android:name="BUGLY_ENABLE_DEBUG"
-            android:value="${BUGLY_ENABLE_DEBUG}" />
+            android:value="${BUGLY_ENABLE_DEBUG}" />-->
     </application>
 
 </manifest>

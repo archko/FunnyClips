@@ -103,7 +103,7 @@ abstract class AnimatorAdapter<T : RecyclerView.ViewHolder>
     fun onRestoreInstanceState(parcelable: Parcelable) {
         if (parcelable is Bundle) {
             if (mViewAnimator != null) {
-                mViewAnimator?.onRestoreInstanceState(parcelable.getParcelable(SAVEDINSTANCESTATE_VIEWANIMATOR))
+                mViewAnimator?.onRestoreInstanceState(parcelable.getParcelable(SAVEDINSTANCESTATE_VIEWANIMATOR)!!)
             }
         }
     }

@@ -38,9 +38,9 @@ class WebConfig {
         const val HOT_TOTAL_RANKING_URL: String = "v4/rankList/videos?strategy=historical&udid=d2807c895f0348a180148c9dfa6f2feeac0781b5&deviceModel=%s"//热门-总排行
 
         fun getServer(): String? {
-            if (BuildConfig.MODEL_ONLINE) {
-                return EYEPETIZER_BASE_URL
-            }
+            //if (BuildConfig.MODEL_ONLINE) {
+            //    return EYEPETIZER_BASE_URL
+            //}
             return EYEPETIZER_BASE_URL
         }
         fun getServerIp(): String? {

@@ -69,12 +69,12 @@ class ArcView: View {
         mPaint?.setColor(mBgColor);
 
         var rect = Rect(0, 0, mWidth, mHeight - mArcHeight);
-        canvas?.drawRect(rect, mPaint);
+        canvas?.drawRect(rect, mPaint!!);
 
 
         var path = Path();
         path.moveTo(0f, (mHeight - mArcHeight).toFloat());
         path.quadTo(mWidth / 2f, mHeight.toFloat(), mWidth.toFloat(), (mHeight - mArcHeight).toFloat());
-        canvas?.drawPath(path, mPaint);
+        canvas?.drawPath(path, mPaint!!);
     }
 }

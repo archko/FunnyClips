@@ -17,15 +17,15 @@ class AppConfig {
         /**
          * 开发者模式
          */
-        const val MODEL_DEBUG = BuildConfig.MODEL_DEBUG
+        const val MODEL_DEBUG = false;//BuildConfig.MODEL_DEBUG
         /**
          * 线上模式
          */
-        const val MODEL_ONLINE = BuildConfig.MODEL_ONLINE
+        const val MODEL_ONLINE = true;//BuildConfig.MODEL_ONLINE
 
         /**
          * 编译版本
          */
-        const val BUILD_CODE = BuildConfig.BUILD_CODE
+        const val BUILD_CODE = 1;//BuildConfig.BUILD_CODE
     }
 }

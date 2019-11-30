@@ -82,7 +82,7 @@ class VideoCategoryActivity : BaseActivity(),View.OnClickListener,CategoryDetail
     }
 
     fun initData (){
-        var categoryReq = intent.extras.getSerializable(Constant.INTENT_DATA_KEY) as CategoryReq
+        var categoryReq = intent.extras?.getSerializable(Constant.INTENT_DATA_KEY) as CategoryReq
         ImageUtils.instance.loadImage(this,mIvPoster,categoryReq.bgPicture)
         mCtlTitle.title = categoryReq.name
         categoryId = categoryReq.id

@@ -116,7 +116,7 @@ class VideoDetailActivity : BaseActivity(), View.OnClickListener,RelatedVideoVie
     }
 
     fun initData (){
-        var data = intent.extras.getSerializable(Constant.INTENT_DATA_KEY) as HomeItemInfo
+        var data = intent.extras?.getSerializable(Constant.INTENT_DATA_KEY) as HomeItemInfo
         ImageUtils.instance.loadImage(this,mIvVideoPoster,data.data!!.cover!!.feed)
         ImageUtils.instance.loadAvatar(this,mIvAvatar,data.data!!.author!!.icon)
         mCtlVideoTitle.title = data.data!!.title

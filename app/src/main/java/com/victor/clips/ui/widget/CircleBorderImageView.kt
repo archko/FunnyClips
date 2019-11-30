@@ -235,7 +235,7 @@ class CircleBorderImageView: ImageView {
     private fun drawBitmap(canvas: Canvas, bitmap: Bitmap, adjustScale: Boolean) {
         refreshBitmapShaderConfig(bitmap, adjustScale)
         mPaintDraw?.setShader(mBitmapShader)
-        canvas.drawCircle(mCenterX.toFloat(), mCenterY.toFloat(), mRadius.toFloat(), mPaintDraw)
+        canvas.drawCircle(mCenterX.toFloat(), mCenterY.toFloat(), mRadius.toFloat(), mPaintDraw!!)
     }
 
     private fun refreshBitmapShaderConfig(bitmap: Bitmap, adjustScale: Boolean) {
@@ -272,20 +272,20 @@ class CircleBorderImageView: ImageView {
         paintClipText.color = mTextColor
         paintClipText.textAlign = Paint.Align.CENTER
         val fontMetrics = paintClipText.fontMetrics
-        canvasClipText.drawText(mText, 0, mText!!.length, bitmapRadius.toFloat(),
+        canvasClipText.drawText(mText!!, 0, mText!!.length, bitmapRadius.toFloat(),
                 bitmapRadius + Math.abs(fontMetrics.top + fontMetrics.bottom) / 2, paintClipText)
         return bitmapClipText
     }
 
     private fun drawText(canvas: Canvas) {
         refreshTextConfig()
-        canvas.drawCircle(mCenterX.toFloat(), mCenterY.toFloat(), mRadius.toFloat(), mPaintTextBackground)
-        canvas.drawText(mText, 0, mText!!.length, mCenterX.toFloat(),
-                mCenterY + Math.abs(mFontMetrics!!.top + mFontMetrics!!.bottom) / 2, mPaintTextForeground)
+        canvas.drawCircle(mCenterX.toFloat(), mCenterY.toFloat(), mRadius.toFloat(), mPaintTextBackground!!)
+        canvas.drawText(mText!!, 0, mText!!.length, mCenterX.toFloat(),
+                mCenterY + Math.abs(mFontMetrics!!.top + mFontMetrics!!.bottom) / 2, mPaintTextForeground!!)
     }
 
     fun drawBoarder(canvas: Canvas) {
-        canvas.drawCircle(mCenterX.toFloat(), mCenterY.toFloat(), (mRadius - mBoarderWidth / 2).toFloat(), mPaintCircle)
+        canvas.drawCircle(mCenterX.toFloat(), mCenterY.toFloat(), (mRadius - mBoarderWidth / 2).toFloat(), mPaintCircle!!)
     }
 
     fun getColorBySeed(seed: String): Int {
