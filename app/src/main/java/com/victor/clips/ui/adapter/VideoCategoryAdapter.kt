@@ -8,6 +8,7 @@ import android.widget.AdapterView
 import com.victor.clips.R
 import com.victor.clips.data.CategoryReq
 import com.victor.clips.ui.holder.ContentViewHolder
+import com.victor.clips.util.FontUtils
 import com.victor.clips.util.ImageUtils
 import kotlinx.android.synthetic.main.rv_video_category_cell.view.mTvTitle
 import kotlinx.android.synthetic.main.rv_video_category_cell.view.mIvPoster
@@ -31,7 +32,7 @@ class VideoCategoryAdapter(context: Context, listener: AdapterView.OnItemClickLi
     var fontStyle: Typeface? = null
 
     init {
-        fontStyle = Typeface.createFromAsset(mContext?.assets, "fonts/ZuoAnLianRen.ttf");
+        fontStyle = FontUtils.getTypeface(mContext?.assets!!);
     }
     override fun onCreateHeadVHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder? {
         return null

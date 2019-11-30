@@ -45,7 +45,7 @@ class ThemeSettingActivity : BaseActivity(),View.OnClickListener,AdapterView.OnI
         setSupportActionBar(mVideoToolbar);
         supportActionBar?.setDisplayHomeAsUpEnabled(true);
 
-        fontStyle = Typeface.createFromAsset(assets, "fonts/ZuoAnLianRen.ttf")
+        fontStyle = FontUtils.getTypeface(assets);
         mCtvThemeSelection.typeface = fontStyle
         mBtnOk.typeface = fontStyle
         mBtnCancel.typeface = fontStyle

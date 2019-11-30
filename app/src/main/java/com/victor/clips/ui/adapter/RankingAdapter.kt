@@ -9,6 +9,7 @@ import com.victor.clips.R
 import com.victor.clips.data.HomeItemInfo
 import com.victor.clips.ui.holder.ContentViewHolder
 import com.victor.clips.ui.widget.parallaximageview.VerticalMovingStyle
+import com.victor.clips.util.FontUtils
 import com.victor.clips.util.ImageUtils
 import kotlinx.android.synthetic.main.rv_ranking_cell.view.*
 
@@ -26,7 +27,7 @@ class RankingAdapter(context: Context, listener: AdapterView.OnItemClickListener
     var fontStyle: Typeface? = null
 
     init {
-        fontStyle = Typeface.createFromAsset(mContext?.assets, "fonts/ZuoAnLianRen.ttf");
+        fontStyle = FontUtils.getTypeface(mContext?.assets!!);
     }
 
     override fun onCreateHeadVHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder? {

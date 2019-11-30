@@ -4,16 +4,14 @@ import android.content.Intent
 import android.graphics.Typeface
 import android.os.Bundle
 import android.os.Message
-import androidx.appcompat.app.AppCompatActivity
-import android.view.Menu
-import android.view.MenuItem
-import com.victor.clips.R
-import com.victor.clips.util.Constant.Msg.Companion.ENTER_HAPPY_COAST
-import org.victor.khttp.library.util.MainHandler
 import android.view.animation.AnimationUtils
+import androidx.appcompat.app.AppCompatActivity
+import com.victor.clips.R
 import com.victor.clips.util.AppUtil
-import com.victor.clips.util.Constant
+import com.victor.clips.util.Constant.Msg.Companion.ENTER_HAPPY_COAST
+import com.victor.clips.util.FontUtils
 import kotlinx.android.synthetic.main.activity_welcome.*
+import org.victor.khttp.library.util.MainHandler
 
 
 class WelcomeActivity : BaseActivity(),MainHandler.OnMainHandlerImpl {
@@ -48,7 +46,7 @@ class WelcomeActivity : BaseActivity(),MainHandler.OnMainHandlerImpl {
     fun initialize () {
         MainHandler.get().register(this)
 
-        fontStyle = Typeface.createFromAsset(assets, "fonts/ZuoAnLianRen.ttf");
+        fontStyle = FontUtils.getTypeface(assets);
         mTvAppName.typeface = fontStyle
         mTvVersion.typeface = fontStyle
 

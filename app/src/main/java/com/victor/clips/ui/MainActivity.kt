@@ -76,7 +76,7 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
 
         SharePreferencesUtil.putInt(this,Constant.CATEGORY_POSITION_KEY,0)
 
-        fontStyle = Typeface.createFromAsset(assets, "fonts/ZuoAnLianRen.ttf");
+        fontStyle = FontUtils.getTypeface(assets);
         navigationView.getHeaderView(0).mTvOurOriginalIntention.typeface = fontStyle
 
     }
