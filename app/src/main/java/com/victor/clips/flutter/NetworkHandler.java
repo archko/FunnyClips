@@ -10,12 +10,12 @@ import io.flutter.plugin.common.MethodChannel;
  * @author: archko 2019/11/28 :11:00 AM
  */
 public class NetworkHandler implements INativeHandler {
-    private final static String HTTP_GET_DATA = "method";
+    private final static String HTTP_GET_DATA = "xxaction";
     @Override
     public void onCallMethod(MethodCall call, MethodChannel.Result result,
                              Handler handler, Activity activity) {
-        String cmd = call.argument("method");
-        if (cmd.equals(HTTP_GET_DATA)) {
+        String action = call.argument("action");
+        if (action.equals(HTTP_GET_DATA)) {
         }
     }
 

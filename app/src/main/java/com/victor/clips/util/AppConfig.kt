@@ -17,7 +17,7 @@ class AppConfig {
         /**
          * 开发者模式
          */
-        const val MODEL_DEBUG = false;//BuildConfig.MODEL_DEBUG
+        const val MODEL_DEBUG = true;//BuildConfig.MODEL_DEBUG
         /**
          * 线上模式
          */
