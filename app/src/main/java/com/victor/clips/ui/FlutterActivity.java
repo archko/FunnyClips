@@ -6,13 +6,14 @@ import android.os.Bundle;
 
 import com.victor.clips.flutter.FlutterMainPlugin;
 
+import androidx.appcompat.app.AppCompatActivity;
 import io.flutter.facade.Flutter;
 import io.flutter.view.FlutterView;
 
 /**
  * Created by archko on 2019-11-30.
  */
-public class FlutterActivity extends BaseActivity {
+public class FlutterActivity extends AppCompatActivity {
 
     public static void startActivity(Activity activity, String routeName) {
         Intent intent = new Intent(activity, FlutterActivity.class);
@@ -28,11 +29,6 @@ public class FlutterActivity extends BaseActivity {
         bundle.putString("routeName", routeName);
         intent.putExtras(bundle);
         activity.startActivity(intent);
-    }
-
-    @Override
-    public int getLayoutResource() {
-        return 0;
     }
 
     @Override
