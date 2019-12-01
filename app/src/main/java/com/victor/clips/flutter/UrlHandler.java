@@ -35,14 +35,14 @@ public class UrlHandler implements INativeHandler {
             int categoryId = call.argument("categoryId");
             resultMap.put("code", 0);
             resultMap.put("msg", "success");
-            resultMap.put("url", FlutterUrl.Companion.getCategoryById(categoryId));
+            resultMap.put("url", FlutterUrl.Companion.getCategoryByIdUrl(categoryId));
             result.success(resultMap);
             return;
         } else if (URL_VIDEO_BY_ID.equals(action)) {
             int videoId = call.argument("videoId");
             resultMap.put("code", 0);
             resultMap.put("msg", "success");
-            resultMap.put("url", FlutterUrl.Companion.getVideoById(videoId));
+            resultMap.put("url", FlutterUrl.Companion.getVideoByIdUrl(videoId));
             result.success(resultMap);
             return;
         }

@@ -10,7 +10,7 @@ public final class FlutterUrl {
 
     companion object {
         /**
-         * get discovery category list
+         * get discovery category list url
          */
         fun getCategoryUrl(): String {
             return String.format(WebConfig.getRequestUrl(WebConfig.FIND_CATEGORIES_URL),
@@ -18,17 +18,17 @@ public final class FlutterUrl {
         }
 
         /**
-         * get category detail,return a list
+         * get category detail,the url return a list
          */
-        fun getCategoryById(categoriId: Int): String {
+        fun getCategoryByIdUrl(categoriId: Int): String {
             return String.format(WebConfig.getRequestUrl(WebConfig.CATEGORY_DETAIL_URL),
                     categoriId, DeviceUtils.getPhoneModel())
         }
 
         /**
-         * get video by id,return video and a list,the same as getCategoryById
+         * get video by id,the url return a video list,the same as getCategoryById
          */
-        fun getVideoById(videoId: Int): String {
+        fun getVideoByIdUrl(videoId: Int): String {
             return String.format(WebConfig.getRequestUrl(WebConfig.RELATED_VIDEO_URL),
                     videoId, DeviceUtils.getPhoneModel())
         }
