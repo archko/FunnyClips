@@ -43,7 +43,7 @@ class SplashActivity : BaseActivity(), MediaPlayer.OnCompletionListener {
 
     fun toWelcome() {
         //WelcomeActivity.intentStart(this)
-        FlutterActivity.startActivity(this, "home")
+        AFlutterActivity.startActivity(this, "home")
         finish()
     }
 }

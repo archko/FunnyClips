@@ -13,10 +13,10 @@ import io.flutter.view.FlutterView;
 /**
  * Created by archko on 2019-11-30.
  */
-public class FlutterActivity extends AppCompatActivity {
+public class AFlutterActivity extends AppCompatActivity {
 
     public static void startActivity(Activity activity, String routeName) {
-        Intent intent = new Intent(activity, FlutterActivity.class);
+        Intent intent = new Intent(activity, AFlutterActivity.class);
         Bundle bundle = new Bundle();
         bundle.putString("routeName", routeName);
         intent.putExtras(bundle);
@@ -24,7 +24,7 @@ public class FlutterActivity extends AppCompatActivity {
     }
 
     public static void startActivity(Activity activity, int requestCode, String routeName) {
-        Intent intent = new Intent(activity, FlutterActivity.class);
+        Intent intent = new Intent(activity, AFlutterActivity.class);
         Bundle bundle = new Bundle();
         bundle.putString("routeName", routeName);
         intent.putExtras(bundle);
