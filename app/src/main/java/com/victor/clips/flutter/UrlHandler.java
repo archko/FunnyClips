@@ -18,6 +18,9 @@ public class UrlHandler implements INativeHandler {
     private final static String URL_CATEGORY = "category";
     private final static String URL_CATEGORY_BY_ID = "category_by_id";
     private final static String URL_VIDEO_BY_ID = "video_by_id";
+    private final static String URL_HOT_WEEKLY = "hot_weekly";
+    private final static String URL_HOT_MONTHLY = "hot_monthly";
+    private final static String URL_TOTAL_RANKING = "total_ranking";
 
     @Override
     public void onCallMethod(MethodCall call, MethodChannel.Result result,
@@ -43,6 +46,24 @@ public class UrlHandler implements INativeHandler {
             resultMap.put("code", 0);
             resultMap.put("msg", "success");
             resultMap.put("url", FlutterUrl.Companion.getVideoByIdUrl(videoId));
+            result.success(resultMap);
+            return;
+        } else if (URL_HOT_WEEKLY.equals(action)) {
+            resultMap.put("code", 0);
+            resultMap.put("msg", "success");
+            resultMap.put("url", FlutterUrl.Companion.getHotWeeklyUrl());
+            result.success(resultMap);
+            return;
+        } else if (URL_HOT_MONTHLY.equals(action)) {
+            resultMap.put("code", 0);
+            resultMap.put("msg", "success");
+            resultMap.put("url", FlutterUrl.Companion.getHotMonthlyUrl());
+            result.success(resultMap);
+            return;
+        } else if (URL_TOTAL_RANKING.equals(action)) {
+            resultMap.put("code", 0);
+            resultMap.put("msg", "success");
+            resultMap.put("url", FlutterUrl.Companion.getHotTotalRankingUrl());
             result.success(resultMap);
             return;
         }

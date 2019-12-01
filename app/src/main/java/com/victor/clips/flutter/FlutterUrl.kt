@@ -32,5 +32,20 @@ public final class FlutterUrl {
             return String.format(WebConfig.getRequestUrl(WebConfig.RELATED_VIDEO_URL),
                     videoId, DeviceUtils.getPhoneModel())
         }
+
+        fun getHotWeeklyUrl(): String {
+            return String.format(WebConfig.getRequestUrl(WebConfig.HOT_WEEKLY_URL),
+                    DeviceUtils.getPhoneModel())
+        }
+
+        fun getHotMonthlyUrl(): String {
+            return String.format(WebConfig.getRequestUrl(WebConfig.HOT_MONTHLY_URL),
+                    DeviceUtils.getPhoneModel())
+        }
+
+        fun getHotTotalRankingUrl(): String {
+            return String.format(WebConfig.getRequestUrl(WebConfig.HOT_TOTAL_RANKING_URL),
+                    DeviceUtils.getPhoneModel())
+        }
     }
 }
