@@ -16,6 +16,7 @@ import io.flutter.plugin.common.MethodChannel;
  */
 public class UrlHandler implements INativeHandler {
     private final static String URL_CATEGORY = "category";
+    private final static String URL_CATEGORY_BY_ID = "category_by_id";
 
     @Override
     public void onCallMethod(MethodCall call, MethodChannel.Result result,
@@ -27,6 +28,13 @@ public class UrlHandler implements INativeHandler {
             resultMap.put("code", 0);
             resultMap.put("msg", "success");
             resultMap.put("url", FlutterUrl.Companion.getCategoryUrl());
+            result.success(resultMap);
+            return;
+        } else if (URL_CATEGORY_BY_ID.equals(action)) {
+            int categoryId = call.argument("categoryId");
+            resultMap.put("code", 0);
+            resultMap.put("msg", "success");
+            resultMap.put("url", FlutterUrl.Companion.getCategoryById(categoryId));
             result.success(resultMap);
             return;
         }
