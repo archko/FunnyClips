@@ -6,14 +6,13 @@ import android.os.Bundle;
 
 import com.victor.clips.flutter.FlutterMainPlugin;
 
-import androidx.appcompat.app.AppCompatActivity;
-import io.flutter.facade.Flutter;
+import io.flutter.app.FlutterActivity;
 import io.flutter.view.FlutterView;
 
 /**
  * Created by archko on 2019-11-30.
  */
-public class AFlutterActivity extends AppCompatActivity {
+public class AFlutterActivity extends FlutterActivity {
 
     public static void startActivity(Activity activity, String routeName) {
         Intent intent = new Intent(activity, AFlutterActivity.class);
@@ -43,8 +42,9 @@ public class AFlutterActivity extends AppCompatActivity {
         //GeneratedPluginRegistrant.registerWith(this);
 
         // 根据指定routeName创建FlutterView用来展示对应dart中的Widget
-        FlutterView flutterView = Flutter.createView(this, this.getLifecycle(), routeName);
-        setContentView(flutterView);
+        FlutterView flutterView = getFlutterView();//Flutter.createView(this, this.getLifecycle(), routeName);
+        //setContentView(flutterView);
+        flutterView.setInitialRoute(routeName);
 
         //MethodChannel 通信方式
         FlutterMainPlugin.registerWith(flutterView);
