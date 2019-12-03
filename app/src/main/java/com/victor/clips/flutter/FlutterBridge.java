@@ -7,14 +7,14 @@ import android.os.Bundle;
 /**
  * @author: archko 2019/11/28 :10:25 AM
  */
-public class FlutterMain {
-    private static FlutterMain sInstance = null;
+public class FlutterBridge {
+    private static FlutterBridge sInstance = null;
 
     private Activity mCurrentActiveActivity;
 
-    public static FlutterMain getInstance() {
+    public static FlutterBridge getInstance() {
         if (sInstance == null) {
-            sInstance = new FlutterMain();
+            sInstance = new FlutterBridge();
         }
         return sInstance;
     }

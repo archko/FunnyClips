@@ -2,7 +2,7 @@ package com.victor.clips.app
 
 import android.app.Application
 import com.tencent.bugly.crashreport.CrashReport
-import com.victor.clips.flutter.FlutterMain
+import com.victor.clips.flutter.FlutterBridge
 
 /*
  * -----------------------------------------------------------------
@@ -25,6 +25,6 @@ class App : Application () {
         instance = this
         CrashReport.initCrashReport(getApplicationContext());
 
-        FlutterMain.getInstance().init(this)
+        FlutterBridge.getInstance().init(this)
     }
 }

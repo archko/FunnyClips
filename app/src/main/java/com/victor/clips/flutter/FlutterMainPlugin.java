@@ -96,7 +96,7 @@ public class FlutterMainPlugin {
 
         @Override
         public void onMethodCall(MethodCall methodCall, final MethodChannel.Result result) {
-            Activity activity = FlutterMain.getInstance().getCurrentActiveActivity();
+            Activity activity = FlutterBridge.getInstance().getCurrentActiveActivity();
             Loger.Companion.d("method", methodCall.method);
             switch (methodCall.method) {
                 case HTTP_CHANNEL:
